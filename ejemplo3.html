@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Buscar</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    </head>
+
+    <body>
+        <h1>Alerta</h1>
+       <input type="text" id="espacio">
+       <input type="submit" id="enviar" value="Enviar"> 
+        
+        <script>
+            $(document).ready(function(){ 
+               $("#enviar").click(function(){ //boton 
+                   var x =$("#espacio").val(); //lo que el usuario ingresa
+                   
+                   Swal.fire({
+                    title: x,
+                    text: '',
+                    imageUrl: 'img/emojis.jpg',
+                    imageWidth: 200,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                    animation: false
+                    })
+               })
+            });
+        </script>
+
+    </body>
+</html>

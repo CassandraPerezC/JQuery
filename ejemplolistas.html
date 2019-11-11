@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Buscar</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    </head>
+
+    <body>
+       <h1>Lista de colores</h1>
+
+       <ul>
+           <li>rojo</li>
+           <li>azul</li>
+           <li>verde</li>
+       </ul>
+
+       <h1>Lista de números</h1>
+       
+       <ul>
+           <li>uno</li>
+           <li>dos</li>
+           <li>tres</li>
+       </ul>
+
+       <input id="button" type="button" value="Ultimos">
+
+       <input id="buttonn" type="button" value="Primeros">
+
+
+        <script>
+            $(document).ready(function(){ 
+               $("#button").click(function(){ //boton 
+                  $("ul li:last-child").hide();  
+               })
+            });
+
+            $(document).ready(function(){ 
+               $("#buttonn").click(function(){ //boton 
+                  $("ul li:first-child").hide();  
+               })
+            });
+        </script>
+
+    </body>
+</html>

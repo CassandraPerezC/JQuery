@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Cambiar Texto</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+       <p id="texto1">Cambiar Texto</p>
+       <p id="texto2">Cambiar Html</p>
+        <br>
+        <button id="boton1">Cambiar Texto</button>
+        <button id="boton2">Cambiar Html</button>
+
+        <script>
+            $(document).ready(function(){ 
+              $("#boton1").click(function(){
+                $("#texto1").text("<b>Hola mundo</b>")
+              });
+
+              $("#boton2").click(function(){
+                $("#texto2").html("<b>Hola mundo</b>")
+              });
+
+            });
+
+
+        
+        </script>
+
+    </body>
+</html>

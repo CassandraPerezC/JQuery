@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Buscar</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    </head>
+
+    <body>
+        <h2>Desaparece texto</h2>
+       <input type="button" id="button" value="Enviar"> 
+
+       <p id="texto">Texto</p>
+
+
+       <h2>Desaparece botón</h2>
+       <input type="button" id="buttonn" value="Enviar"> 
+
+       <p id="#button">Texto</p>
+        
+
+       <h2>Desaparece botón con this</h2>
+       <input type="button" id="boton" value="Enviar"> 
+
+       <p id="texto">Texto</p>
+
+        <script>
+            $(document).ready(function(){ 
+               $("#button").click(function(){ //boton 
+                  $("#texto").hide(3000).show(500);  
+               })
+            });
+
+            $(document).ready(function(){ 
+               $("#boton").click(function(){ //boton 
+                  $(this).hide(3000).show(500);  
+               })
+            });
+
+            $(document).ready(function(){ 
+               $("#buttonn").click(function(){ //boton 
+                  $("#buttonn").hide(3000).show(500);  
+               })
+            });
+
+           
+        </script>
+
+    </body>
+</html>
